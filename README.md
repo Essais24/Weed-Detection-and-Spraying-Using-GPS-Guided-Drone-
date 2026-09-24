@@ -37,7 +37,6 @@ GPS-guided autonomous drone for real-time weed detection and precision spraying.
 | Docker | Runs the Colab notebook on a local runtime |
 
 ## System Architecture
-
 ```mermaid
 flowchart LR
     A[Pi Camera] --> B["MediaMTX RTSP server (Pi)"]
@@ -51,7 +50,6 @@ flowchart LR
     I --> J["Pi sends GPS to Docker via HTTP / UDP"]
     J --> K["GPIO activated when target reached"]
 ```
-
 ## Training the YOLOv5 Model
 
 **Dataset:** [Weed Detection on Kaggle](https://www.kaggle.com/datasets/jaidalmotra/weed-detection)
